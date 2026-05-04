@@ -11,7 +11,8 @@ import {
   FaUsers,
   FaComments,
   FaTasks,
-  FaBootstrap
+  FaBootstrap,
+  FaPalette
 } from "react-icons/fa";
 import {
   SiMongodb,
@@ -42,6 +43,7 @@ const backendSkills = [
 ];
 
 const stylingTools = [
+  { name: "UI/UX Design", icon: <FaPalette /> }, // ✅ ADDED
   { name: "Tailwind CSS", icon: <SiTailwindcss /> },
   { name: "Bootstrap", icon: <FaBootstrap /> },
   { name: "Figma", icon: <SiFigma /> },
@@ -71,13 +73,13 @@ function SkillCategory({ title, skills }) {
           <motion.div
             key={index}
             whileHover={{ scale: 1.07 }}
-            className="bg-[#111827] border border-gray-800 rounded-xl p-5 flex flex-col items-center gap-2 hover:border-indigo-500 transition"
+            className="bg-[#111827] border border-gray-800 rounded-xl p-5 flex flex-col items-center gap-2 hover:border-indigo-500 hover:shadow-indigo-500/20 hover:shadow-lg transition duration-300"
           >
             <div className="text-indigo-400 text-2xl">
               {skill.icon}
             </div>
 
-            <p className="text-sm font-medium">
+            <p className="text-sm font-medium text-center">
               {skill.name}
             </p>
           </motion.div>
