@@ -101,7 +101,7 @@ function Footer() {
             </p>
 
             <p>
-              Powered by React + Tailwind 🚀
+              Powered by React + Tailwind 
             </p>
 
           </div>
