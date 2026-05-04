@@ -4,12 +4,18 @@ import {
   FaBrain,
   FaNetworkWired,
   FaLaptopCode,
+  FaBasketballBall,
+  FaCogs,
 } from "react-icons/fa";
 
 const interests = [
   {
     name: "Building AI Models",
     icon: <FaRobot size={28} />,
+  },
+  {
+    name: "Working with AI Models",
+    icon: <FaCogs size={28} />,
   },
   {
     name: "Machine Learning",
@@ -22,6 +28,10 @@ const interests = [
   {
     name: "Full Stack Development",
     icon: <FaLaptopCode size={28} />,
+  },
+  {
+    name: "Playing Basketball",
+    icon: <FaBasketballBall size={28} />,
   },
 ];
 
@@ -44,13 +54,13 @@ function Interests() {
         </motion.h2>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
 
           {interests.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
-              className="bg-[#111827] border border-gray-800 rounded-xl p-6 flex flex-col items-center gap-4 shadow-md hover:border-indigo-500 transition"
+              className="bg-[#111827] border border-gray-800 rounded-xl p-6 flex flex-col items-center gap-4 shadow-md hover:border-indigo-500 hover:shadow-indigo-500/20 hover:shadow-lg transition duration-300"
             >
               <div className="text-indigo-400">
                 {item.icon}
