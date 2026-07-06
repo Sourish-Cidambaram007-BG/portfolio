@@ -19,15 +19,18 @@ function About() {
           </h2>
 
           <p className="text-gray-400 text-lg leading-relaxed">
-            I'm Sourish Cidambaram BG , a Full Stack Developer passionate about building scalable digital solutions and intelligent applications. My
-            interests include Artificial Intelligence, Machine Learning,
-            Data Mining, and Deep Learning, where I explore how technology
-            can solve meaningful real-world problems.
+            I'm <span className="text-white font-semibold">Sourish Cidambaram BG</span>, a
+            Full Stack Developer passionate about building scalable digital
+            solutions and intelligent applications. My interests include
+            Artificial Intelligence, Machine Learning, Data Mining, and Deep
+            Learning, where I explore how technology can solve meaningful
+            real-world problems.
           </p>
 
           <p className="text-gray-400 text-lg leading-relaxed mt-6">
-            My long-term vision is to grow into a tech entrepreneur and become a
-            billionaire CEO creating impactful innovations for the world.
+            My long-term vision is to grow into a tech entrepreneur and build
+            products that create a meaningful impact worldwide through
+            innovation and technology.
           </p>
         </motion.div>
 
@@ -38,32 +41,42 @@ function About() {
           transition={{ duration: 0.8 }}
           className="grid grid-cols-2 gap-6"
         >
-          <div className="bg-[#111827] p-6 rounded-xl border border-gray-800">
+          <div className="bg-[#111827] p-6 rounded-xl border border-gray-800 hover:border-indigo-500 transition">
             <h3 className="text-indigo-400 font-semibold">
               Full Stack
             </h3>
             <p className="text-gray-400 text-sm mt-2">
-              React, Java, MySQL, Tailwind
+              React, Java, MySQL & Tailwind CSS
             </p>
           </div>
 
-          <div className="bg-[#111827] p-6 rounded-xl border border-gray-800">
+          <div className="bg-[#111827] p-6 rounded-xl border border-gray-800 hover:border-indigo-500 transition">
             <h3 className="text-indigo-400 font-semibold">
               AI & ML
             </h3>
             <p className="text-gray-400 text-sm mt-2">
-              Data Mining & Deep Learning
+              Machine Learning, Data Mining & Deep Learning
             </p>
           </div>
 
-          <div className="bg-[#111827] p-6 rounded-xl border border-gray-800">
+          <div className="bg-[#111827] p-6 rounded-xl border border-gray-800 hover:border-indigo-500 transition">
+            <h3 className="text-indigo-400 font-semibold">
+              Career
+            </h3>
+            <p className="text-gray-400 text-sm mt-2">
+              Upcoming Analyst @ Deloitte US India
+            </p>
+          </div>
+
+          <div className="bg-[#111827] p-6 rounded-xl border border-gray-800 hover:border-indigo-500 transition">
             <h3 className="text-indigo-400 font-semibold">
               Vision
             </h3>
             <p className="text-gray-400 text-sm mt-2">
-              Future Tech Entrepreneur & Billionaire CEO
+              Building AI-driven products and aspiring to become a Tech Entrepreneur.
             </p>
           </div>
+
         </motion.div>
 
       </div>

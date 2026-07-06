@@ -1,11 +1,11 @@
 import { motion } from "framer-motion";
-import { FaUserTie, FaBullhorn } from "react-icons/fa";
+import { FaUserTie, FaBullhorn, FaBriefcase } from "react-icons/fa";
 
 const responsibilities = [
   {
     title: "Class Representative (2025 - 2026)",
     description:
-      "Representing my class by coordinating with faculty members, supporting classmates academically, and managing communication between students and department.",
+      "Representing my class by coordinating with faculty members, supporting classmates academically, and managing communication between students and the department.",
     icon: <FaUserTie size={28} />,
   },
   {
@@ -13,6 +13,12 @@ const responsibilities = [
     description:
       "Actively promoting department initiatives, supporting student engagement activities, and representing the Computer Science department at campus-level programs.",
     icon: <FaBullhorn size={28} />,
+  },
+  {
+    title: "Chief Operating Officer – Premier Litho Works (Apr 2026 – Present)",
+    description:
+      "Leading operational activities, coordinating project execution, improving business workflows, and driving digital initiatives while supporting strategic decision-making for the organization.",
+    icon: <FaBriefcase size={28} />,
   },
 ];
 
@@ -35,12 +41,12 @@ function Responsibilities() {
         </motion.h2>
 
         {/* Responsibility Cards */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {responsibilities.map((item, index) => (
             <motion.div
               key={index}
               whileHover={{ scale: 1.05 }}
-              className="bg-[#111827] border border-gray-800 rounded-xl p-6 shadow-md hover:border-indigo-500 transition"
+              className="bg-[#111827] border border-gray-800 rounded-xl p-6 shadow-md hover:border-indigo-500 hover:shadow-indigo-500/20 hover:shadow-lg transition duration-300"
             >
               <div className="text-indigo-400 mb-4">
                 {item.icon}
