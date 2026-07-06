@@ -1,28 +1,33 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Education from "./components/Education";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Responsibilities from "./components/Responsibilities";
-import Experience from "./components/Experience";
-import Footer from "./components/Footer"
-import Achievements from "./components/Achievements";
 import Interests from "./components/Interests";
+import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+import Responsibilities from "./components/Responsibilities";
+import Achievements from "./components/Achievements";
 import Inspiration from "./components/Inspiration";
+import Footer from "./components/Footer";
+
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
+
       <About />
+      <Education />
       <Skills />
       <Interests />
       <Projects />
-      <Experience/>
+      <Experience />
       <Responsibilities />
       <Achievements />
       <Inspiration />
-      <Footer/>
+
+      <Footer />
     </>
   );
 }

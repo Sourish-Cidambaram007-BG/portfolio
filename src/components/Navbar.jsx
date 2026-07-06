@@ -27,6 +27,13 @@ function Navbar() {
             </a>
           </li>
 
+          {/* ✅ Added Education */}
+          <li>
+            <a href="#education" className="hover:text-indigo-400">
+              Education
+            </a>
+          </li>
+
           <li>
             <a href="#skills" className="hover:text-indigo-400">
               Skills
