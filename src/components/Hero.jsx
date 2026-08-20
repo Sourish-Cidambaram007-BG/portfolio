@@ -29,7 +29,7 @@ function Hero() {
             transition={{ delay: 0.5 }}
             className="mt-6 text-xl text-gray-400"
           >
-            Full Stack Developer • AI Enthusiast • Future Tech Entrepreneur Billionaire CEO
+            Full Stack Developer • AI Enthusiast • Future Tech Entrepreneur Billionaire CEO  • Upcoming Analyst @ Deloitte USI
           </motion.p>
 
           <motion.div
